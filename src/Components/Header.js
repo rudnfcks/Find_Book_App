@@ -1,7 +1,7 @@
-import search from "./svg/search_1.svg";
+import search from "../svg/search_1.svg";
 
-import style from "./css/Header.module.css";
-import cf from "./css/clearFix.css";
+import style from "../css/Header.module.css";
+import cf from "../css/clearFix.css";
 
 function Header() {
   return (

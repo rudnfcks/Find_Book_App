@@ -1,9 +1,8 @@
-import Header from "./Header";
-import Nav from "./Nav";
-import Home from "./Home";
-import Footer from "./Footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { useEffect } from "react";
+import Home from "./routes/Home";
+
+import { useState, useEffect } from "react";
 
 function App() {
   useEffect(() => {
@@ -11,12 +10,19 @@ function App() {
   });
 
   return (
-    <div id="wrap">
-      <Header />
-      <Nav />
-      <Home />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/search">
+          <div>search</div>
+        </Route>
+        <Route path="/select">
+          <div>select</div>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

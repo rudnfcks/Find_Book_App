@@ -15,9 +15,14 @@
   width: 120px;
   height: 50px;
 
+  box-sizing: border-box;
+
   text-align: center;
   font-size: 20px;
   line-height: 50px;
+}
+#nav li:hover {
+  cursor: pointer;
 }
 #nav li img {
   float: left;
@@ -33,4 +38,7 @@
   width: 60px;
 
   color: #ffffff;
+}
+#nav li.on {
+  border-bottom: #ffffff 5px solid;
 }
