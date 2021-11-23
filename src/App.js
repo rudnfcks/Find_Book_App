@@ -1,16 +1,21 @@
 import Header from "./Header";
 import Nav from "./Nav";
+import Home from "./Home";
+import Footer from "./Footer";
 
-import style from "./css/App.module.css";
-import reset from "./css/reset.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.fetch("");
+  });
+
   return (
-    <div id={style.wrap}>
+    <div id="wrap">
       <Header />
       <Nav />
-      <section></section>
-      <footer></footer>
+      <Home />
+      <Footer />
     </div>
   );
 }
