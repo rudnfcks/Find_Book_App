@@ -1,14 +1,14 @@
 import Header from "../Components/Header";
 import Nav from "../Components/Nav";
-import Main from "../Components/Main";
+import Slide from "../Components/Slide";
 import Footer from "../Components/Footer";
 
-function Home() {
+function Home({ value }) {
   return (
     <div id="wrap">
       <Header />
       <Nav select={0} />
-      <Main />
+      <Slide />
       <Footer />
     </div>
   );

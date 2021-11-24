@@ -11,19 +11,19 @@ function Nav({ select }) {
       <div>
         <ul>
           <li className={select === 0 ? style.on : ""}>
-            <Link to="/">
+            <Link to="/Find_Book_App/">
               <img src={home} alt="home" />
-              <span span>홈</span>
+              <span>홈</span>
             </Link>
           </li>
           <li className={select === 1 ? style.on : ""}>
-            <Link to="/search">
+            <Link to="/Find_Book_App/search">
               <img src={search} alt="search" />
-              <span span>전체</span>
+              <span>전체</span>
             </Link>
           </li>
           <li className={select === 2 ? style.on : ""}>
-            <Link to="/select">
+            <Link to="/Find_Book_App/select">
               <img src={list} alt="list" />
               <span>찜</span>
             </Link>

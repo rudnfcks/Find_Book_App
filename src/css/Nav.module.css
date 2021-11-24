@@ -40,5 +40,5 @@
   color: #ffffff;
 }
 #nav li.on {
-  border-bottom: #ffffff 5px solid;
+  border-bottom: rgba(255, 255, 255, 0.8) 5px solid;
 }

@@ -1,24 +1,19 @@
+import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./routes/Home";
 
-import { useState, useEffect } from "react";
-
 function App() {
-  useEffect(() => {
-    window.fetch("");
-  });
-
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route path="/Find_Book_App">
           <Home />
         </Route>
-        <Route path="/search">
+        <Route path="/Find_Book_App/search">
           <div>search</div>
         </Route>
-        <Route path="/select">
+        <Route path="/Find_Book_App/select">
           <div>select</div>
         </Route>
       </Switch>
