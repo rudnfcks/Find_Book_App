@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer id={style.footer} className={cf.cf}>
       <div>
-        <h1>F-Book</h1>
+        <h1>Z-Book</h1>
         <ul>
           <li>
             <img src={email} alt="email" />

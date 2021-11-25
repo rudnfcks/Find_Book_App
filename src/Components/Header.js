@@ -2,17 +2,34 @@ import search from "../svg/search_1.svg";
 
 import style from "../css/Header.module.css";
 import cf from "../css/clearFix.css";
+import { useState } from "react/cjs/react.development";
+import { Link } from "react-router-dom";
 
 function Header() {
+  const [searchText, setSearchText] = useState("");
+
+  const changeInputHanddle = (event) => {
+    const text = event.target.value;
+
+    setSearchText(text.replace(/\?/g, ""));
+  };
+
   return (
     <header id={style.header} className={cf.cf}>
       <div>
-        <h1>F-Book</h1>
+        <h1>Z-Book</h1>
         <div className={style.searchBox}>
-          <a href="#">
+          <a href={`../../search/${searchText}/0`}>
             <img src={search} alt="search" />
           </a>
-          <input type="text" placeholder="제목, 저자, 출판사 검색" />
+          <form action={`../../search/${searchText}/0`}>
+            <input
+              type="text"
+              placeholder="제목 검색"
+              onChange={changeInputHanddle}
+              value={searchText}
+            />
+          </form>
         </div>
       </div>
     </header>

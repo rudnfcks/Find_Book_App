@@ -2,10 +2,12 @@ import axios from "axios";
 
 export const searchBooks = async (text, start) => {
   const url = "/api/v1/search/book.json";
+  const findCount = 56;
+
   const params = {
     query: text,
-    display: 20,
-    start: start * 20,
+    display: findCount,
+    start: start * findCount + 1,
   };
   const headers = {
     "X-Naver-Client-Id": "8hs6a6xFMe0P_KWA_XvR",
@@ -16,14 +18,14 @@ export const searchBooks = async (text, start) => {
     data: { items },
   } = await axios.get(url, { params: params, headers: headers });
 
-  console.log(items);
+  return items;
 };
 
-export const getBooks = async (text) => {
+export const getBooks = async (text, number) => {
   const url = "/api/v1/search/book.json";
   const params = {
     query: text,
-    display: 10,
+    display: number,
   };
   const headers = {
     "X-Naver-Client-Id": "8hs6a6xFMe0P_KWA_XvR",

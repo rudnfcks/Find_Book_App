@@ -1,18 +1,43 @@
 #section {
   margin: 0 auto;
+  width: 100vw;
+  height: 450px;
+}
+#section .suggestion {
+  width: 100vw;
+  height: 50px;
+}
+#section .suggestion > div {
+  margin: 0 auto;
   width: 1200px;
-  height: 400px;
+  height: 50px;
 
-  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  background: linear-gradient(#999999, #777777);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 0px 0px 25px 25px;
+  line-height: 50px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 }
 #section h1 {
   margin-top: 100px;
   text-align: center;
 }
-#section div {
+#section .slide {
   position: relative;
+  margin: 0 auto;
+
+  width: 1200px;
+  height: 400px;
+  overflow: hidden;
+
+  border-bottom: #aaaaaa 10px solid;
 }
-#section div button {
+#section .slide button {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -26,17 +51,17 @@
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
-#section div button:nth-of-type(1) {
+#section .slide button:nth-of-type(1) {
   left: 5px;
 }
-#section div button:nth-of-type(2) {
+#section .slide button:nth-of-type(2) {
   right: 5px;
 }
-#section div button img {
+#section .slide button img {
   width: 30px;
   height: 30px;
 }
-#section .slide {
+#section .slideMain {
   transition: 1s margin-left;
   margin-top: 60px;
 

@@ -1,0 +1,12 @@
+#section {
+  margin: 10px auto;
+  width: 1200px;
+}
+#section h1 {
+  padding: 50px 0 10px 10px;
+  border-bottom: #dddddd 1px solid;
+}
+#section > div {
+  width: 1200px;
+  height: 540px;
+}

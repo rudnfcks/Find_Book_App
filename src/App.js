@@ -1,21 +1,13 @@
-import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import Home from "./routes/Home";
+import Search from "./routes/Search";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/Find_Book_App">
-          <Home />
-        </Route>
-        <Route path="/Find_Book_App/search">
-          <div>search</div>
-        </Route>
-        <Route path="/Find_Book_App/select">
-          <div>select</div>
-        </Route>
+        <Route path="/search/:search/:index" component={Search}></Route>
+        <Route path="/" component={Home}></Route>
       </Switch>
     </Router>
   );

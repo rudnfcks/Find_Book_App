@@ -1,0 +1,41 @@
+.book {
+  float: left;
+  position: relative;
+
+  margin: 10px 5px;
+  width: 140px;
+  height: 250px;
+
+  background-color: #fff;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+.book > img {
+  margin: 10px auto;
+  width: 120px;
+
+  display: block;
+}
+.book > p {
+  position: absolute;
+  bottom: 25px;
+
+  width: 120px;
+  padding: 0px 10px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.book > div > span {
+  position: absolute;
+  bottom: 10px;
+
+  width: 60px;
+  padding: 0px 10px;
+
+  font-size: 11px;
+}
+.book > div > span:nth-of-type(2) {
+  left: 35px;
+  font-weight: bolder;
+}

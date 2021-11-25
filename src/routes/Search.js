@@ -1,19 +1,19 @@
 import Header from "../Components/Header";
 import Nav from "../Components/Nav";
-import Slide from "../Components/Slide";
-import Main from "../Components/Main";
 import Footer from "../Components/Footer";
+import List from "../Components/List";
 
-function Home() {
+function Search({ match }) {
+  const { search, index } = match.params;
+
   return (
     <div id="wrap">
       <Header />
-      <Nav select={0} />
-      <Slide />
-      <Main />
+      <Nav select={1} />
+      <List search={search} index={index} />
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Search;
